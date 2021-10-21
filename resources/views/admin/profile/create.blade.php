@@ -18,19 +18,17 @@
                     <div class="form-group row">
                         <label class="col-md-2">氏名</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="title" value="{{ old('name')}}">
+                            <input type="text" class="form-control" name="name" value="{{ old('name')}}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2">性別</label>
                         <div class="col-md-10">
                             <label>
-                                男性：
-                                <input type="radio" name="gender"{{ old('gender') ? 'checked' : '' }}>
+                                <input type="radio" name="gender" value="{{ old('gender') ? 'checked' : '' }}">男性
                             </label>
                             <label>
-                                女性：
-                                <input type="radio" name="gender"{{ old('gender') ? 'checked' : '' }}>
+                                <input type="radio" name="gender" value="{{ old('gender') ? 'checked' : '' }}">女性
                             </label>
                         </div>
                     </div>
